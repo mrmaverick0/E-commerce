@@ -1,7 +1,7 @@
 import React from "react";
 import cartIcon from "./assets/cartIcon.png";
 import Cart from "./Cart";
-const Header = ({ onShowCart,onClose }) => {
+const Header = ({ onShowCart,onClose,count }) => {
   return (
     <div className="w-full h-20 bg-black border-b-[1px] border-b-gray-800 font-titleFont sticky top-0 z-50">
       <div className="max-w-screen-xl h-full mx-auto flex items-center justify-between">
@@ -36,13 +36,7 @@ const Header = ({ onShowCart,onClose }) => {
                 About Us
               </li>
             </ul>
-            <div className="flex bg-white cursor-pointer  justify-between gap-14">
-              <div className="relative">
-                <img onClick={onShowCart} className="w-8 " src={cartIcon} alt="cartImage" />
-                
-              </div>
-             
-            </div>
+          
           </div>
         </div>
       </div>
