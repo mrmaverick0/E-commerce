@@ -7,6 +7,7 @@ import { useState } from "react";
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 import About from "./About";
 import Home from "./Home";
+import Contact from "./Contact";
 function App() {
   const [product, setProduct] = useState([
     {
@@ -57,7 +58,8 @@ function App() {
   const  router = createBrowserRouter([
     {path:'/about', element: <About/>},
     {path:'/home', element: <Home/>},
-    {path:'/', element: <div><Cart placement='end' name='Cart'/>
+    {path:'/contact', element: <Contact/>},
+    {path:'/', element: <div><Header/> <Cart placement='end' name='Cart'/>
     <Products/></div> }
   ])
 
